@@ -10,16 +10,16 @@
         <div class="maindiv">
             <h1>Simple Interest Calculator</h1>
 
-            Amount <input type="number" id="principal">
+            <span class="label">Amount</span><input type="number" id="principal">
             <br />
 
-            Rate <input type="range" id="rate"
-                        min="1" max="20" step="0.25" value="10.25"
-                        onchange="updateRate()">
+            <span class="label">Rate</span><input type="range" id="rate"
+                                                  min="1" max="20" step="0.25" value="10.25"
+                                                  onchange="updateRate()">
             <span id="rate_val">10.25</span>%
             <br />
 
-            No. of Years
+            <span class="label">No. of Years</span>
             <select id="years">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -35,18 +35,19 @@
             <br />
             <br />
 
-            <span id="result"></span>
-            <br>
-
             <button onclick="compute()">Compute Interest</button>
+            <br />
+            <br />
 
             <span id="result">
 
             </span>
 
+            <br />
+            <br />
+            <footer>
+                &#169; This Calculator belongs to Miguel Fernandez
+            </footer>
         </div>
-        <footer>
-            &#169; This Calculator belongs to Miguel Fernandez
-        </footer>
     </body>
 </html>
